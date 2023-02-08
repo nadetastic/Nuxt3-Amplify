@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   alias: {
     "./runtimeConfig": "./runtimeConfig.browser"
   },
-  ssr: false,
+  // ssr: false,
   vite: {
     define: {
       "window.global": {}

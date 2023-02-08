@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt -p 5173 dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "nuxt preview -p 5173",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {

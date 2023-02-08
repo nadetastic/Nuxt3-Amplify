@@ -1,18 +1,8 @@
 {
   "auth": {
-    "nuxtapp80a3b2f1": {
+    "authemailusernameb2b52776b2b52776": {
       "customAuth": false,
-      "dependsOn": [
-        {
-          "attributes": [
-            "Arn",
-            "Name"
-          ],
-          "category": "function",
-          "resourceName": "nuxtapp80a3b2f1PostConfirmation",
-          "triggerProvider": "Cognito"
-        }
-      ],
+      "dependsOn": [],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
         "mfaTypes": [
@@ -25,9 +15,12 @@
         "signupAttributes": [
           "EMAIL"
         ],
-        "socialProviders": [],
+        "socialProviders": [
+          "GOOGLE"
+        ],
         "usernameAttributes": [
-          "EMAIL"
+          "EMAIL",
+          "PHONE_NUMBER"
         ],
         "verificationMechanisms": [
           "EMAIL"
@@ -37,14 +30,6 @@
       "service": "Cognito"
     }
   },
-  "function": {
-    "nuxtapp80a3b2f1PostConfirmation": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "hosting": {},
   "parameters": {
     "AMPLIFY_function_nuxtapp80a3b2f1PostConfirmation_deploymentBucketName": {
       "usedBy": [
